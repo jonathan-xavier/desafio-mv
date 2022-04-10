@@ -1,0 +1,32 @@
+<app-navbar></app-navbar>
+<section>
+  <div class="title">
+    <h1>Cadatrar Colaborador</h1>
+  </div>
+</section>
+
+<section>
+  <form class="container">
+    <div class="col-2">
+      <div class="item1">
+        <label for="nome">Nome :</label>
+        <input
+          formControlName="name"
+          type="text"
+          name="nome"
+          class="form-control"
+        />
+      </div>
+    </div>
+
+    <div class="button">
+      <button mat-raised-button color="basic">Salvar</button>
+      <button class="limpar" mat-raised-button color="basic">Limpar</button>
+    </div>
+    <!-- 
+      <div class="button" [ngStyle]="{'display': contact !== null ? 'block': 'none'}">
+        <button (click)="save()" mat-raised-button color="primary">editar contato</button>
+        <button  class="limpar"  (click)="resetar()" mat-raised-button color="primary">Limpar</button>
+      </div> -->
+  </form>
+</section>

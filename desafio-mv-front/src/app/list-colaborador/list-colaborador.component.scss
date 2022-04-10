@@ -1,0 +1,102 @@
+.container-title {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+button {
+  border: 2px solid black;
+  border-radius: 0;
+  color: black;
+  text-transform: uppercase;
+}
+//botao de busca
+.search-box {
+  background: #2f3640;
+  height: 40px;
+  border-radius: 30px;
+  // width: 250px;
+  // transform: translate(-50%, -50%);
+  float: left;
+  padding: 10px;
+  margin-left: 10px;
+}
+.search-btn {
+  color: #7159c1;
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #2f3640;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+  text-decoration: none;
+}
+//magic
+.search-box:hover > .search-txt {
+  width: 240px;
+  padding: 0 6px;
+}
+.search-box:hover > .search-btn {
+  background: white;
+}
+
+.search-txt {
+  border: none;
+  background: none;
+  outline: none;
+  float: left;
+  padding: 0;
+  color: white;
+  font-size: 16px;
+  transition: 0.4s;
+  line-height: 40px;
+  width: 0;
+}
+
+.container_buttons_table {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+}
+
+.container-buttons {
+  float: right;
+  margin: 20px 20px 20px 0px;
+  button {
+    margin-left: 15px;
+  }
+}
+
+table {
+  border: 1px solid #000;
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table tr {
+  background-color: #f8f8f8;
+  border: 1px solid #ddd;
+}
+
+thead tr {
+  background-color: #7159c1;
+  color: #fff;
+}
+
+table th,
+table td {
+  padding: 0.625em;
+  text-align: center;
+}
+
+table th {
+  font-size: 0.85em;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}

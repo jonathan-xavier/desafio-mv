@@ -1,0 +1,60 @@
+<app-navbar></app-navbar>
+
+<section class="buttons">
+  <div class="container-title">
+    <h1>ITENS</h1>
+  </div>
+</section>
+<!-- Botao de adicionar contato -->
+
+<!-- botao para pesquisar - (ver depois esse botãod e pesquisa) -->
+<!-- <section class="search-box"> 
+  <input [(ngModel)]="filter" class="search-txt" type="text" name="" placeholder="Buscar por email...">
+  <a class="search-btn" >
+    <mat-icon>search</mat-icon>
+  </a>
+</section> -->
+<!-- <div class="form-group row">
+  <label for="" class="col-sm-2 col-form-label">Filter By:</label>
+  <div class="col-sm-10">
+     <input [(ngModel)]="filter" class="form-control">
+  </div>
+</div> -->
+
+<section>
+  <div class="container-buttons">
+    <button mat-raised-button color="basic" (click)="criarItem()">
+      Novo item
+    </button>
+    <button mat-raised-button color="basic" (click)="criarColaborador()">
+      Novo colaborador
+    </button>
+  </div>
+</section>
+
+<!-- tabela de lista de contatos -->
+<section>
+  <div>
+    <table>
+      <!-- thead -->
+      <thead>
+        <tr>
+          <th scope="col">Nome do item</th>
+        </tr>
+      </thead>
+      <!-- tbody -->
+      <tbody>
+        <tr *ngFor="let item of filteredItens">
+          <td data-label="Nome">{{ item.nome }}</td>
+
+          <td>
+            <div class="container_buttons_table">
+              <mat-icon (click)="deleteItens(item)">delete</mat-icon>
+              <mat-icon (click)="editItem(item)">edit</mat-icon>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
